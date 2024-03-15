@@ -59,8 +59,8 @@ css({
       },
       '.description': {
         marginTop: '{space.3}',
-        fontSize: '{text.xl.fontSize}',
-        lineHeight: '{text.xl.lineHeight}',
+        fontSize: '18px',
+        lineHeight: '1.5',
       },
       img: {
         width: '100%',

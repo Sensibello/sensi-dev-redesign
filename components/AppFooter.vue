@@ -19,15 +19,43 @@ const alpine = useAppConfig().alpine
     <p v-if="alpine.footer?.message" class="message">
       {{ alpine.footer.message }}
     </p>
-
+    
     <div class="icons">
       <div v-if="alpine.socials && Object.entries(alpine.socials)" class="social">
         <SocialIcons :socials="alpine.socials" />
       </div>
+      <div class="footer-small-text">
+      <p>Built with 
+        <a href="https://nuxt.com/" target="_blank" 
+        rel="noreferrer noopener" aria-label="Nuxt (opens in a new tab)">
+        Nuxt
+      </a>, 
+      <a href="https://nuxt.studio//" target="_blank" 
+        rel="noreferrer noopener" aria-label="Nuxt Studio (opens in a new tab)">
+        NuxtStudio
+      </a> , and
+      <a href="https://content.nuxt.com/" target="_blank" 
+        rel="noreferrer noopener" aria-label="Nuxt Content (opens in a new tab)">
+        NuxtContent
+      </a>.
+        Coded in 
+        <a href="https://code.visualstudio.com/" target="_blank" 
+        rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)">
+        Visual Studio Code
+      </a> 
+        by yours truly.
+      Deployed with 
+        <a href="https://www.netlify.com/" target="_blank" 
+        rel="noreferrer noopener" aria-label="Netlify (opens in a new tab)">
+        Netlify
+      </a>, and launched from Cleveland, Ohio.
+      </p>
+    </div>
       <div class="color-mode-switch">
         <ColorModeSwitch />
       </div>
     </div>
+   
   </footer>
 </template>
 

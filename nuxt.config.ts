@@ -9,9 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/plausible',
     // https://github.com/nuxt/devtools
     '@nuxt/devtools',
-    ['@nuxtjs/google-fonts', {
-      
-  }],
+
   ],
   components: [
 		'~/components',

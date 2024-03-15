@@ -72,9 +72,7 @@ const id = computed(() => {
       <p class="description">
         {{ article.description }}
       </p>
-      <time>
-        {{ formatDate(article.date) }}
-      </time>
+     
     </div>
   </article>
 </template>
@@ -140,7 +138,7 @@ css({
         // TODO: add secondary color token
         color: '{color.gray.500}',
         '@dark': {
-          color: '{color.gray.500}',
+          color: '{color.gray.200}',
         }
       }
     },

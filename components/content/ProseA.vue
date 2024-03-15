@@ -24,15 +24,28 @@
   <style>
   .document-driven-page {
     a {
+   
+        font-family: 'Karla', sans-serif;
         color: inherit;
         text-decoration: none;
-        border-bottom: solid 1px #27ff62;
+        border-bottom: solid 2px #27ff62;
         padding-bottom: 2px;
         transition: border .2s ease-in;
+        width: fit-content;
+     
+        
 
         &:hover {
-            border-bottom: solid 4px #27ff62;
-        }
+         /* color:#c2ff00; */
+         border-bottom: solid 4px #27ff62;
+          &:before {
+            
+           
+          }
+      }
+      &:before {
+        
+      }
     }
   }
 

@@ -17,12 +17,12 @@
       >
         {{ page.title }}
       </h1>
-      <time
-        v-if="page?.date"
-        :datetime="page.date"
+      <p
+        v-if="page?.industry"
+       
       >
-        {{ formatDate(page.date) }}
-      </time>
+        {{ page.industry }}
+    </p>
     </header>
 
     <div class="prose">

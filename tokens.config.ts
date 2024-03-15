@@ -12,7 +12,7 @@ export default defineTheme({
     body: {
       backgroundColor: {
         initial: '{color.white}',
-        dark: '{color.black}'
+        dark: '#292929'
       },
       color: {
         initial: '{color.gray.800}',
@@ -55,6 +55,26 @@ export default defineTheme({
         900: '#0fff50',
       },
   },
+  typography: {
+    font: {
+      display: '{font.mono}',
+      body: '{font.sans}',
+    }
+  },
+  font: {
+    $schema: {
+      title: 'Your website fonts',
+      tags: [
+        '@studioInput design-token',
+        '@studioInputTokenType font',
+        '@studioIcon material-symbols:font-download-rounded',
+      ],
+    },
+    sans: 'Inter, NunitoSans, Arial, sans-serif',
+    serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
+    mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
+  },
+
   prose: {
     p: {
       fontSize: '18px'
